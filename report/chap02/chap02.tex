@@ -1,0 +1,97 @@
+\phantomsection
+\setsection{Chương 2: Đặc tả yêu cầu}
+\setcounter{section}{2}
+\setcounter{subsection}{0}
+
+\phantomsection
+
+\subsection{Mô tả bài toán}
+Tạo ra một trang web quản lý mượn sách nhằm đáp ứng nhu cầu mượn sách của người dùng một cách thuận tiện và tiết kiệm thời gian, giảm bớt sự cần thiết phải đến trực tiếp nơi mượn sách để kiểm tra sự có mặt của cuốn sách mong muốn. Người dùng chỉ cần truy cập vào trang web và lựa chọn những cuốn sách muốn mượn, sau đó đến nơi mượn sách để nhận sách là đã hoàn thành. Chức năng quản trị bao gồm xem lịch sử mượn sách, điều chỉnh số lượng sách, cập nhật thông tin sách, v.v.
+\par
+Đối với đọc giả đã có tài khoản. Để thực hiện việc đặt mượn sách trực tuyến, người dùng cần phải đăng ký làm thành viên trên trang web. Sau khi trở thành thành viên, họ có thể đăng nhập vào trang web bằng tên đăng nhập và mật khẩu của mình để sử dụng tính năng đặt mượn trực tuyến.
+
+\phantomsection
+
+\subsection{Yêu cầu bài toán}
+
+\begin{itemize}[align=left, leftmargin=2cm]
+  \item[\textbf{-- Đối với đọc giả}]:
+        \begin{itemize}[label={+}]
+          \item Đăng nhập, đăng xuất, tạo tài khoản.
+          \item Xem danh sách sản phẩm.
+          \item Quản lý thông tin cá nhân (xem và chỉnh sửa thông tin cá nhân)
+          \item Được quyền đặt mượn sách trực tuyến.
+          \item Tra cứu lịch sử mượn sách.
+        \end{itemize}
+  \item[\textbf{-- Đối với quản trị viên}]:
+        \begin{itemize}[label={+}]
+          \item Đăng nhập, đăng xuất.
+          \item Quản lý tài khoản (Thêm, sửa và xóa tài khoản đọc giả).
+          \item Quản lý sách (Thêm, sửa và xóa sách).
+          \item Quản lý nhà xuất bản (Thêm, sửa, và xóa nhà xuất bản).
+          \item Quản lý mượn sách (Thêm, sửa và xóa lịch sử mượn sách).
+        \end{itemize}
+\end{itemize}
+
+\phantomsection
+\subsection{Ngôn ngữ lập trình, thư viện và các công cụ có liên quan}
+% \setcounter{subsection}
+
+\phantomsection
+\subsubsection{Vue}
+\begin{center}
+  \begin{minipage}{.3\linewidth}
+    \captionsetup{type=figure, width=.93\linewidth}
+    \includegraphics[width=\linewidth]{images/vue.png}
+    \caption{\centering Vue}
+    \label{fig:vue}
+  \end{minipage}%
+\end{center}
+
+Vue.js (Vue) là một framework JavaScript mã nguồn mở, được sử dụng để xây dựng giao diện người dùng động và tương tác.
+Vue có cú pháp dễ đọc, hỗ trợ hai chiều dữ liệu và tích hợp tốt với các thư viện khác \cite{vue}.
+
+\phantomsection
+\subsubsection{Node}
+\figmini[.5]{images/node.png}{fig:node}{NodeJS}
+
+Node.js (Node) là một môi trường chạy mã JavaScript phía máy chủ.
+Nó cho phép viết mã JavaScript không chỉ trong trình duyệt mà còn trên máy chủ, giúp xây dựng ứng dụng web đa năng \cite{node}.
+
+\phantomsection
+\subsubsection{Express}
+\figmini{images/express.png}{fig:express}{ExpressJS}
+
+Express là một framework Node.js giúp xây dựng các ứng dụng web và API một cách nhanh chóng.
+Nó cung cấp các tiện ích để quản lý định tuyến, xử lý yêu cầu và phản hồi \cite{express}.
+
+\phantomsection
+\subsubsection{Mongo}
+\figmini{images/mongo.png}{fig:mongo}{MongoDB}
+
+MongoDB là một hệ quản trị cơ sở dữ liệu phi quan hệ, dựa trên tài liệu.
+Nó lưu trữ dữ liệu dưới dạng JSON-like và hỗ trợ mở rộng dễ dàng \cite{mongodb}.
+
+\phantomsection
+\subsubsection{Ant Design Vue}
+\figmini{images/antdv.png}{fig:antdv}{Ant Design Vue}
+
+Ant Design Vue là một framework dựa trên Vue.js, được thiết kế theo nguyên tắc Material Design.
+Nó cung cấp các thành phần và công cụ giúp bạn xây dựng giao diện người dùng đẹp và phong phú về nội dung \cite{antdesignvue}.
+\phantomsection
+\subsubsection{Bootstrap 5}
+\figmini{images/bootstrap.png}{fig:bootstrap}{bootstrap}
+
+
+Bootstrap là một framework web mã nguồn mở giúp phát triển giao diện web nhanh chóng và linh hoạt bằng cách cung cấp các thành phần HTML, CSS và JavaScript được thiết kế sẵn. \cite{bootstrap}.
+
+\phantomsection
+\subsubsection{Visual Studio Code}
+\figmini{images/vscode.png}{fig:vscode}{Visual Studio Code}
+
+Visual Studio Code (VS Code) là một trình soạn thảo mã nguồn nhẹ nhưng mạnh mẽ, chạy trên máy tính của bạn và có sẵn cho Windows, macOS và Linux.
+Nó tích hợp sẵn hỗ trợ cho JavaScript, TypeScript và Node.js, và có một hệ sinh thái phong phú về tiện ích mở rộng cho các ngôn ngữ và môi trường khác (như C++, C\#, Java, Python, PHP, Go, .NET) \cite{vscode}.
+
+
+
+
